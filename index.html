@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Raditya Andika</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f4f4; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; margin-bottom: 5px; }
+        h2 { color: #34495e; border-bottom: 2px solid #3498db; display: inline-block; margin-top: 30px; padding-bottom: 5px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        
+        /* Gaya Baru untuk Kartu Proyek */
+        .project-grid { margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 600px) { .project-grid { grid-template-columns: 1fr; } }
+        .project-card { background: #fafafa; border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; transition: 0.3s; }
+        .project-card:hover { transform: translateY(-5px); box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .project-card h3 { margin-top: 0; color: #2c3e50; }
+        .project-link { display: inline-block; margin-top: 10px; color: #3498db; text-decoration: none; font-weight: bold; }
+        .project-link:hover { text-decoration: underline; }
+        
+        .btn-github { display: block; text-align: center; margin-top: 30px; padding: 12px 25px; background: #24292e; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-github:hover { background: #000; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Halo, Saya Raditya Andika 👋</h1>
+    <p>Mahasiswa Teknik Informatika semester 4. Saya senang belajar teknologi baru, terutama dalam pengembangan web dan pemrograman. Saya percaya bahwa belajar dengan praktik langsung adalah cara terbaik untuk berkembang.</p>
+    
+    <h2>Skill Teknis</h2>
+    <ul>
+        <li><strong>Web Dasar:</strong> HTML & CSS</li>
+        <li><strong>Programming:</strong> JavaScript, Python</li>
+        <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
+    </ul>
+
+    <h2>Proyek Terbaru</h2>
+    <div class="project-grid">
+        <!-- Kartu Proyek 1 -->
+        <div class="project-card">
+            <h3>Website Kreatif (Ghaitsa)</h3>
+            <p>Proyek pengembangan web responsif menggunakan HTML dan CSS untuk menampilkan layout portofolio kreatif.</p>
+            <a href="https://github.com/radityaandhika356-cmd" class="project-link" target="_blank">Lihat Kode →</a>
+        </div>
+
+        <!-- Kartu Proyek 2 -->
+        <div class="project-card">
+            <h3>Proyek Program Python</h3>
+            <p>Eksperimen pemrograman menggunakan Python untuk menyelesaikan logika dasar dan tugas kuliah.</p>
+            <a href="https://github.com/radityaandhika356-cmd" class="project-link" target="_blank">Lihat Kode →</a>
+        </div>
+    </div>
+
+    <a href="https://github.com/radityaandhika356-cmd" class="btn-github" target="_blank">Kunjungi GitHub Utama Saya</a>
+</div>
+
+</body>
+</html>
