@@ -26,18 +26,22 @@ body {
     padding: 20px;
 }
 
+/* 4. Kontainer Utama dengan Animasi */
 .container {
     background-color: var(--container-bg);
     color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
     max-width: 800px;
     margin: auto;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+    /* Transisi warna & Animasi Fade-in */
+    transition: background-color 0.3s, color 0.3s;
+    animation: fadeIn 0.8s ease-out forwards;
 }
 
-/* 4. Terapkan ke Kartu Proyek */
+/* 5. Kartu Proyek */
 .project-card {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -46,12 +50,12 @@ body {
     transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 5. Interaksi (Hover) */
 .project-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* 6. Tombol Kontak */
 .contact-section a {
     transition: transform 0.2s ease, filter 0.2s ease;
 }
@@ -60,12 +64,9 @@ body {
     transform: scale(1.05);
     filter: brightness(1.2);
 }
-/* Tambahkan ini di bagian bawah style.css */
+
+/* 7. Definisi Animasi */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
-}
-
-.container {
-    animation: fadeIn 0.8s ease-out forwards;
 }
