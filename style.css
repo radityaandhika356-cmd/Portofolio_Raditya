@@ -1,0 +1,23 @@
+/* --- ANIMASI & EFEK INTERAKTIF --- */
+
+/* Efek Halus pada Kartu Proyek */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ketika Kartu Proyek Disentuh Kursor */
+.project-card:hover {
+    transform: translateY(-8px); /* Kartu terangkat ke atas */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Bayangan menjadi lebih tebal */
+}
+
+/* Efek Halus pada Semua Tombol di Bagian Kontak */
+.contact-section a {
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Ketika Tombol Kontak Disentuh Kursor */
+.contact-section a:hover {
+    transform: scale(1.05); /* Tombol membesar sedikit (5%) */
+    filter: brightness(1.1); /* Warna tombol menjadi sedikit lebih cerah */
+}
