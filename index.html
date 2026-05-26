@@ -5,32 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Raditya Andika</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f4f4; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; margin-bottom: 5px; }
-        h2 { color: #34495e; border-bottom: 2px solid #3498db; display: inline-block; margin-top: 30px; padding-bottom: 5px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        
-        /* Gaya Baru untuk Kartu Proyek */
-        .project-grid { margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        @media (max-width: 600px) { .project-grid { grid-template-columns: 1fr; } }
-        .project-card { background: #fafafa; border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; transition: 0.3s; }
-        .project-card:hover { transform: translateY(-5px); box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .project-card h3 { margin-top: 0; color: #2c3e50; }
-        .project-link { display: inline-block; margin-top: 10px; color: #3498db; text-decoration: none; font-weight: bold; }
-        .project-link:hover { text-decoration: underline; }
-        
-        .btn-github { display: block; text-align: center; margin-top: 30px; padding: 12px 25px; background: #24292e; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
-        .btn-github:hover { background: #000; }
-        .contact-section a {
-            transition: transform 0.2s ease, filter 0.2s ease;
-        }
-        .contact-section a:hover {
-            transform: scale(1.05);
-            filter: brightness(1.1);
-        }
-    </style>
+    /* Gaya Dasar (Terang) */
+    body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f4f4; color: #333; transition: 0.3s; }
+    .container { max-width: 800px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: 0.3s; }
+    h1 { color: #2c3e50; margin-bottom: 5px; }
+    h2 { color: #34495e; border-bottom: 2px solid #3498db; display: inline-block; margin-top: 30px; padding-bottom: 5px; }
+    ul { padding-left: 20px; }
+    
+    .project-grid { margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .project-card { background: #fafafa; border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; transition: 0.3s; }
+    
+    /* --- INI BAGIAN DARK MODE (Tambahkan ini) --- */
+    body.dark-mode { background-color: #1f2326; color: #ffffff; }
+    body.dark-mode .container { background-color: #2c3136; color: #ffffff; }
+    body.dark-mode .project-card { background-color: #3e444a; border-color: #555; }
+    body.dark-mode h1, body.dark-mode h2, body.dark-mode .project-card h3 { color: #ffffff; }
+    /* ------------------------------------------- */
+
+    @media (max-width: 600px) { .project-grid { grid-template-columns: 1fr; } }
+    .project-link { display: inline-block; margin-top: 10px; color: #3498db; text-decoration: none; font-weight: bold; }
+    .btn-github { display: block; text-align: center; margin-top: 30px; padding: 12px 25px; background: #24292e; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+</style>
 </head>
 <body>
 
